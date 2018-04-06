@@ -22,34 +22,44 @@
 \usepackage{placeins}
 \DeclareLanguageMapping{british}{british-apa}
 
-\title{}
+\title{CS5014, P2 - Classification}
 \author{170008773}
 \date{\today}
 \begin{document}
 \maketitle
 
-
-\begin{abstract}
- 
-\end{abstract}
-{\bf Keywords:} 
-
-
-
 \section{Introduction}
 \label{intro}
-\cite{}
- 
- 
-\section{Groundwork}
-\label{groundwork}
+For this assignemdnt we were asked to implement a classification system to classify certain colours from their optical reflectance spectroscopy readings. 
+\section{The learning pipeline}
+\label{content}
 
-\section{Conclusion}
-\label{conclusion}
+\subsection{Cleaning and analysing the data}
+\label{cleaning}
+After loading the data we first examined it by hand. There were 180 samples in the binary set and 450 samples in the multiclass set. Both sets also had 921 features. All of the features consist of some intensity reading from the light reflecting of the surface at certain wavelengths. 
 
- 
+A data set of these proportions is extremely hard to visualise and analyse by hand. Therefore we choose to simply apply some standard normalisation and then we tried applying a simple classification algorithm to get a baseline to compare our other accuracies to. Here we used a \code{MLPClassifier} (Multi-Layer Perceptron) from sci-kit learn with 4 layers. This resulted in a 100\% accuracy score. 
+
+
+
+
+\subsection{Feature selection}
+
+
+\subsection{Selecting and training the model}
+
+
+\subsection{Evaluating the model}
+\label{evaluation}
+
+
+\subsection{Discussing the results}
+\label{discussion}
+
+
+\section{Conclusions}
  
  
 word count: 
 \printbibliography
-f\end{document}
+\end{document}
