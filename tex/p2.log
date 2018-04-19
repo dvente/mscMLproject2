@@ -1,0 +1,868 @@
+This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  19 APR 2018 16:44
+ restricted system commands enabled.
+**p2.tex
+(./p2.tex
+LaTeX2e <2017-04-15>
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using cache: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/gen
+eric)
+luaotfload | conf : Root cache directory is C:/Users/Daniel/AppData/Local/MiKTeX
+/2.9/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/luatex/l
+uaotfload/fontloader-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is C:/Users/Daniel/AppData/Local/MiKTeX
+/2.9/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.965 seconds
+Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from C:/Users/Daniel/AppData/Local/
+MiKTeX/2.9/luatex-cache/generic/names/luaotfload-names.luc(load luc: C:/Users/Da
+niel/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman10-regular.l
+uc))
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.sty
+"
+Package: babel 2017/11/03 3.15 The Babel package
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/switch.de
+f"
+File: switch.def 2017/11/03 3.15 Babel switching mechanism
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/luababel.
+def"
+\l@afrikaans=\language2
+Package babel Info: Non-standard hyphenation setup on input line 112.
+\l@ancientgreek=\language3
+\l@arabic=\language4
+\l@armenian=\language5
+\l@assamese=\language6
+\l@basque=\language7
+\l@bengali=\language8
+\l@bokmal=\language9
+\l@bulgarian=\language10
+\l@catalan=\language11
+\l@classiclatin=\language12
+\l@coptic=\language13
+\l@croatian=\language14
+\l@czech=\language15
+\l@danish=\language16
+\l@dutch=\language17
+\l@esperanto=\language18
+\l@estonian=\language19
+\l@farsi=\language20
+\l@finnish=\language21
+\l@french=\language22
+\l@galician=\language23
+\l@georgian=\language24
+\l@german=\language25
+\l@german-x-2017-03-31=\language26
+\l@greek=\language27
+\l@gujarati=\language28
+\l@hindi=\language29
+\l@hungarian=\language30
+\l@icelandic=\language31
+\l@indonesian=\language32
+\l@interlingua=\language33
+\l@irish=\language34
+\l@italian=\language35
+\l@kannada=\language36
+\l@kurmanji=\language37
+\l@latin=\language38
+\l@latvian=\language39
+\l@lithuanian=\language40
+\l@malayalam=\language41
+\l@marathi=\language42
+\l@mongolian=\language43
+\l@mongolianlmc=\language44
+\l@monogreek=\language45
+\l@ngerman=\language46
+\l@ngerman-x-2017-03-31=\language47
+\l@nynorsk=\language48
+\l@oriya=\language49
+\l@panjabi=\language50
+\l@piedmontese=\language51
+\l@pinyin=\language52
+\l@polish=\language53
+\l@portuguese=\language54
+\l@romanian=\language55
+\l@romansh=\language56
+\l@russian=\language57
+\l@sanskrit=\language58
+\l@serbian=\language59
+\l@serbianc=\language60
+\l@slovak=\language61
+\l@slovenian=\language62
+\l@spanish=\language63
+\l@swedish=\language64
+\l@swissgerman=\language65
+\l@tamil=\language66
+\l@telugu=\language67
+\l@thai=\language68
+\l@turkish=\language69
+\l@turkmen=\language70
+\l@ukenglish=\language71
+\l@ukrainian=\language72
+\l@uppersorbian=\language73
+\l@usenglishmax=\language74
+\l@welsh=\language75
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/arabi/bblopts.cfg
+"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of 
+babel
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-english/bri
+tish.ldf"
+Language: british 2017/06/06 v3.3r English support from the babel system
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/babel-english/eng
+lish.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/babel.def
+"
+File: babel.def 2017/11/03 3.15 Babel common definitions
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/switch.de
+f"
+File: switch.def 2017/11/03 3.15 Babel switching mechanism
+)
+\babel@savecnt=\count87
+\U@D=\dimen103
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/babel/luababel.
+def"))
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/hyph-utf8/loadh
+yph/loadhyph-en-gb.tex" ASCII Hyphenation patterns for British English
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/hyph-utf8/patte
+rns/tex/hyph-en-gb.tex")))))
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/csquotes/csquotes
+.sty"
+Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/etoolbox/etoolbox
+.sty"
+Package: etoolbox 2017/11/22 v2.5 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count88
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/keyval.s
+ty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\csq@reset=\count89
+\csq@gtype=\count90
+\csq@glevel=\count91
+\csq@qlevel=\count92
+\csq@maxlvl=\count93
+\csq@tshold=\count94
+\csq@ltx@everypar=\toks15
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/csquotes/csquotes
+.def"
+File: csquotes.def 2017/03/11 v5.2b csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/csquotes/csquotes
+.cfg"
+File: csquotes.cfg 
+))
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/biblatex
+.sty"
+Package: biblatex 2017/12/19 v3.10 programmable bibliographies (PK/JW/AB)
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/pdftex
+cmds.sty"
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/infwar
+err.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifluat
+ex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ltxcmd
+s.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifpdf.
+sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks16
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/kvoption
+s.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/kvsetk
+eys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/etexcm
+ds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+)))
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/logreq/logreq.sty
+"
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count95
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/logreq/logreq.def
+"
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xstring/xstring.s
+ty"
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/xstring/xstring
+.tex"
+\@xs@message=\write3
+\integerpart=\count96
+\decimalpart=\count97
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count98
+\c@listtotal=\count99
+\c@listcount=\count100
+\c@liststart=\count101
+\c@liststop=\count102
+\c@citecount=\count103
+\c@citetotal=\count104
+\c@multicitecount=\count105
+\c@multicitetotal=\count106
+\c@instcount=\count107
+\c@maxnames=\count108
+\c@minnames=\count109
+\c@maxitems=\count110
+\c@minitems=\count111
+\c@citecounter=\count112
+\c@savedcitecounter=\count113
+\c@uniquelist=\count114
+\c@uniquename=\count115
+\c@refsection=\count116
+\c@refsegment=\count117
+\c@maxextratitle=\count118
+\c@maxextratitleyear=\count119
+\c@maxextradate=\count120
+\c@maxextraalpha=\count121
+\c@abbrvpenalty=\count122
+\c@highnamepenalty=\count123
+\c@lownamepenalty=\count124
+\c@maxparens=\count125
+\c@parenlevel=\count126
+\blx@tempcnta=\count127
+\blx@tempcntb=\count128
+\blx@tempcntc=\count129
+\blx@maxsection=\count130
+\blx@maxsegment@0=\count131
+\blx@notetype=\count132
+\blx@parenlevel@text=\count133
+\blx@parenlevel@foot=\count134
+\blx@sectionciteorder@0=\count135
+\labelnumberwidth=\skip43
+\labelalphawidth=\skip44
+\biblabelsep=\skip45
+\bibitemsep=\skip46
+\bibnamesep=\skip47
+\bibinitsep=\skip48
+\bibparsep=\skip49
+\bibhang=\skip50
+\blx@bcfin=\read1
+\blx@bcfout=\write4
+\c@mincomprange=\count136
+\c@maxcomprange=\count137
+\c@mincompwidth=\count138
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/blx-dm.d
+ef")
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'apa.dbx' found.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex-apa/apa.
+dbx"
+File: apa.dbx 2017/11/05 v7.5 APA biblatex style data model
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count139
+\c@savedafterword=\count140
+\c@annotator=\count141
+\c@savedannotator=\count142
+\c@author=\count143
+\c@savedauthor=\count144
+\c@bookauthor=\count145
+\c@savedbookauthor=\count146
+\c@commentator=\count147
+\c@savedcommentator=\count148
+\c@editor=\count149
+\c@savededitor=\count150
+\c@editora=\count151
+\c@savededitora=\count152
+\c@editorb=\count153
+\c@savededitorb=\count154
+\c@editorc=\count155
+\c@savededitorc=\count156
+\c@foreword=\count157
+\c@savedforeword=\count158
+\c@holder=\count159
+\c@savedholder=\count160
+\c@introduction=\count161
+\c@savedintroduction=\count162
+\c@namea=\count163
+\c@savednamea=\count164
+\c@nameb=\count165
+\c@savednameb=\count166
+\c@namec=\count167
+\c@savednamec=\count168
+\c@translator=\count169
+\c@savedtranslator=\count170
+\c@shortauthor=\count171
+\c@savedshortauthor=\count172
+\c@shorteditor=\count173
+\c@savedshorteditor=\count174
+\c@with=\count175
+\c@savedwith=\count176
+\c@writer=\count177
+\c@savedwriter=\count178
+\c@producer=\count179
+\c@savedproducer=\count180
+\c@execproducer=\count181
+\c@savedexecproducer=\count182
+\c@director=\count183
+\c@saveddirector=\count184
+\c@labelname=\count185
+\c@savedlabelname=\count186
+\c@institution=\count187
+\c@savedinstitution=\count188
+\c@lista=\count189
+\c@savedlista=\count190
+\c@listb=\count191
+\c@savedlistb=\count192
+\c@listc=\count193
+\c@savedlistc=\count194
+\c@listd=\count195
+\c@savedlistd=\count196
+\c@liste=\count197
+\c@savedliste=\count198
+\c@listf=\count199
+\c@savedlistf=\count266
+\c@location=\count267
+\c@savedlocation=\count268
+\c@organization=\count269
+\c@savedorganization=\count270
+\c@origlocation=\count271
+\c@savedoriglocation=\count272
+\c@origpublisher=\count273
+\c@savedorigpublisher=\count274
+\c@publisher=\count275
+\c@savedpublisher=\count276
+\c@language=\count277
+\c@savedlanguage=\count278
+\c@origlanguage=\count279
+\c@savedoriglanguage=\count280
+\c@pageref=\count281
+\c@savedpageref=\count282
+\shorthandwidth=\skip51
+\shortjournalwidth=\skip52
+\shortserieswidth=\skip53
+\shorttitlewidth=\skip54
+\shortauthorwidth=\skip55
+\shorteditorwidth=\skip56
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/blx-unic
+ode.def")
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/blx-comp
+at.def"
+File: blx-compat.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/biblatex
+.def"
+File: biblatex.def 2017/12/19 v3.10 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count283
+\c@textcitetotal=\count284
+\c@textcitemaxnames=\count285
+\c@biburlnumpenalty=\count286
+\c@biburlucpenalty=\count287
+\c@biburllcpenalty=\count288
+\c@smartand=\count289
+)
+Package biblatex Info: Trying to load bibliography style 'apa'...
+Package biblatex Info: ... file 'apa.bbx' found.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex-apa/apa.
+bbx"
+File: apa.bbx 2017/11/05 v7.5 APA biblatex references style
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/bbx/stan
+dard.bbx"
+File: standard.bbx 2017/12/19 v3.10 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count290
+\c@bbx:relatedtotal=\count291
+))
+Package biblatex Info: Trying to load citation style 'apa'...
+Package biblatex Info: ... file 'apa.cbx' found.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex-apa/apa.
+cbx"
+File: apa.cbx 2017/11/05 v7.5 APA biblatex citation style
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined, 
+overwriting.
+Package biblatex Info: Delimiter 'nameyeardelim' in context 'textcite' already d
+efined, overwriting.
+Package biblatex Info: Delimiter 'andothersdelim' in context '' already defined,
+ overwriting.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\citeyear'.
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\citeauthor'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/biblatex
+.cfg"
+File: biblatex.cfg 
+))
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geometry
+.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifvtex
+.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/ifxetex/ifxetex
+.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count292
+\Gm@cntv=\count293
+\c@Gm@tempcnt=\count294
+\Gm@bindingoffset=\dimen104
+\Gm@wd@mp=\dimen105
+\Gm@odd@mp=\dimen106
+\Gm@even@mp=\dimen107
+\Gm@layoutwidth=\dimen108
+\Gm@layoutheight=\dimen109
+\Gm@layouthoffset=\dimen110
+\Gm@layoutvoffset=\dimen111
+\Gm@dimlist=\toks17
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geometry
+.cfg"))
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsmath.s
+ty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip57
+
+For additional information on amsmath, use the `?' option.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amstext.s
+ty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsgen.st
+y"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen112
+))
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsbsy.st
+y"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen113
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsopn.st
+y"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count295
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count296
+\leftroot@=\count297
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count298
+\DOTSCASE@=\count299
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen114
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count300
+\c@MaxMatrixCols=\count301
+\dotsspace@=\muskip11
+\c@parentequation=\count302
+\dspbrk@lvl=\count303
+\tag@help=\toks19
+\row@=\count304
+\column@=\count305
+\maxfields@=\count306
+\andhelp@=\toks20
+\eqnshift@=\dimen115
+\alignsep@=\dimen116
+\tagshift@=\dimen117
+\tagwidth@=\dimen118
+\totwidth@=\dimen119
+\lineht@=\dimen120
+\@envbody=\toks21
+\multlinegap=\skip58
+\multlinetaggap=\skip59
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphicx
+.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphics
+.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/trig.sty
+"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/grap
+hics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 99.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-def/luat
+ex.def"
+File: luatex.def 2017/06/24 v1.0f Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings
+.sty"
+\lst@mode=\count307
+\lst@gtempboxa=\box28
+\lst@token=\toks23
+\lst@length=\count308
+\lst@currlwidth=\dimen123
+\lst@column=\count309
+\lst@pos=\count310
+\lst@lostspace=\dimen124
+\lst@width=\dimen125
+\lst@newlines=\count311
+\lst@lineno=\count312
+\lst@maxwidth=\dimen126
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc.
+sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count313
+\lst@skipnumbers=\count314
+\lst@framebox=\box29
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings
+.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/enumerate.s
+ty"
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks24
+)
+\c@defin=\count315
+\c@prop=\count316
+\c@col=\count317
+\c@thm=\count318
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/placeins/placeins
+.sty"
+Package: placeins 2005/04/18  v 2.2
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/color.st
+y"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/colo
+r.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: luatex.def on input line 147.
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/booktabs/booktabs
+.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen127
+\lightrulewidth=\dimen128
+\cmidrulewidth=\dimen129
+\belowrulesep=\dimen130
+\belowbottomsep=\dimen131
+\aboverulesep=\dimen132
+\abovetopsep=\dimen133
+\cmidrulesep=\dimen134
+\cmidrulekern=\dimen135
+\defaultaddspace=\dimen136
+\@cmidla=\count319
+\@cmidlb=\count320
+\@aboverulesep=\dimen137
+\@belowrulesep=\dimen138
+\@thisruleclass=\count321
+\@lastruleclass=\count322
+\@thisrulewidth=\dimen139
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'british'.
+Package biblatex Info: Trying to load language 'british' -> 'british-apa'...
+Package biblatex Info: ... file 'british-apa.lbx' found.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex-apa/brit
+ish-apa.lbx"
+File: british-apa.lbx 2017/11/05 v7.5 APA biblatex localisation
+Package biblatex Info: Trying to load language 'british'...
+Package biblatex Info: ... file 'british.lbx' found.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/lbx/brit
+ish.lbx"
+File: british.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/biblatex/lbx/engl
+ish.lbx"
+File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
+))) (./p2.aux)
+\openout1 = p2.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+Package biblatex Info: LuaTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+
+\openout4 = p2.bcf
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'p2.bbl' found.
+ (./p2.bbl)
+Package biblatex Info: Reference section=0 on input line 30.
+Package biblatex Info: Reference segment=0 on input line 30.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.m
+kii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count323
+\scratchdimen=\dimen140
+\scratchbox=\box30
+\nofMPsegments=\count324
+\nofMParguments=\count325
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count326
+\MPscratchDim=\dimen141
+\MPnumerator=\count327
+\makeMPintoPDFobject=\count328
+\everyMPtoPDFconversion=\toks26
+)
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf
+-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/grfext.s
+ty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/kvdefi
+nekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 43
+8.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG
+,.JBIG2,.JB2 ,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+\c@lstlisting=\count329
+(load luc: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/o
+tl/lmroman17-regular.luc)(load luc: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/lua
+tex-cache/generic/fonts/otl/lmroman12-regular.luc)(load luc: C:/Users/Daniel/App
+Data/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman12-bold.luc)(load lu
+c: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmrom
+an10-bold.luc)(load luc: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/g
+eneric/fonts/otl/lmmono10-regular.luc)
+
+LaTeX Warning: Reference `metrics' on page 1 undefined on input line 49.
+
+[1
+
+{C:/Users/Daniel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \hbox (166.44513pt too wide) in paragraph at lines 70--81
+[] 
+ []
+
+[2]
+
+LaTeX Warning: Empty bibliography on input line 90.
+
+[3] (./p2.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package logreq Info: Writing requests to 'p2.run.xml'.
+
+\openout1 = p2.run.xml
+)
+
+Here is how much of LuaTeX's memory you used:
+ 12211 strings out of 494456
+ 125171,794899 words of node,token memory allocated
+ 501 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 5 glue, 1 kern, 6 attribute, 56 glue_spec, 6 attrib
+ute_list, 1 write nodes
+   avail lists: 2:340,3:54,4:21,5:165,6:14,7:3275,8:11,9:109,10:10,11:178
+ 15901 multiletter control sequences out of 65536+200000
+ 46 fonts using 3130391 bytes
+ 43i,6n,45p,1018b,2205s stack positions out of 5000i,500n,10000p,200000b,50000s
+<c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmmo
+no10-regular.otf><c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/openty
+pe/public/lm/lmroman10-bold.otf><c:/users/daniel/appdata/local/programs/miktex 2
+.9/fonts/opentype/public/lm/lmroman10-regular.otf><c:/users/daniel/appdata/local
+/programs/miktex 2.9/fonts/opentype/public/lm/lmroman12-bold.otf><c:/users/danie
+l/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmroman12-regular.o
+tf><c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/l
+mroman17-regular.otf><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Daniel/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Daniel/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on p2.pdf (3 pages, 69398 bytes).
+
+PDF statistics: 70 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+
