@@ -1,9 +1,19 @@
 [0] Config.pm:302> INFO - This is Biber 2.10
-[1] Config.pm:305> INFO - Logfile is 'p2.blg'
-[48] biber-MSWIN64:313> INFO - === 
-[104] Biber.pm:371> INFO - Reading 'p2.bcf'
-[285] Biber.pm:857> INFO - Found 1 citekeys in bib section 0
-[310] Biber.pm:3976> INFO - Processing section 0
-[328] Biber.pm:4136> INFO - Looking for bibtex format file '~/Tex/library.bib' for section 0
-[568] Utils.pm:209> ERROR - Cannot find '~/Tex/library.bib'!
-[569] Biber.pm:114> INFO - ERRORS: 1
+[0] Config.pm:305> INFO - Logfile is 'p2.blg'
+[43] biber-MSWIN64:313> INFO - === 
+[96] Biber.pm:371> INFO - Reading 'p2.bcf'
+[242] Biber.pm:857> INFO - Found 6 citekeys in bib section 0
+[266] Biber.pm:3976> INFO - Processing section 0
+[287] Biber.pm:4136> INFO - Looking for bibtex format file 'C:/Users/Daniel/Documents/BibTex/library.bib' for section 0
+[327] bibtex.pm:1490> INFO - LaTeX decoding ...
+[984] bibtex.pm:1306> INFO - Found BibTeX data source 'C:/Users/Daniel/Documents/BibTex/library.bib'
+[990] Utils.pm:193> WARN - Duplicate entry key: 'Willmott2009' in file 'C:/Users/Daniel/Documents/BibTex/library.bib', skipping ...
+[1091] Utils.pm:193> WARN - ISBN '1532-4435' in entry 'Pedregosa2012' is invalid - run biber with '--validate_datamodel' for details.
+[1135] Utils.pm:193> WARN - BibTeX subsystem: C:\Users\Daniel\AppData\Local\Temp\txWTfLLKXy\library.bib_9176.utf8, line 6, warning: 173 characters of junk seen at toplevel
+[1161] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1161] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1161] Biber.pm:3804> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-GB'
+[1161] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-GB'
+[1182] bbl.pm:617> INFO - Writing 'p2.bbl' with encoding 'UTF-8'
+[1204] bbl.pm:720> INFO - Output to p2.bbl
+[1212] Biber.pm:110> INFO - WARNINGS: 3

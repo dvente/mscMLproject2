@@ -1,0 +1,416 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Freund1997}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=9dae54fc70ef3090ef42046937183be2}{%
+           family={Freund},
+           familyi={F\bibinitperiod},
+           given={Yoav},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=1,uniquepart=given,hash=8428d6ce4d2319a5be839da6c9ae0128}{%
+           family={Schapire},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima E},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{84c6ce5fcee6ba7b7dedfc3ac789155c}
+      \strng{fullhash}{84c6ce5fcee6ba7b7dedfc3ac789155c}
+      \strng{bibnamehash}{84c6ce5fcee6ba7b7dedfc3ac789155c}
+      \strng{authorbibnamehash}{84c6ce5fcee6ba7b7dedfc3ac789155c}
+      \strng{authornamehash}{84c6ce5fcee6ba7b7dedfc3ac789155c}
+      \strng{authorfullhash}{84c6ce5fcee6ba7b7dedfc3ac789155c}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract In the first part of the paper we consider the problem of dynamically apportioning resources among a set of options in a worst-case on-line framework. The model we study can be interpreted as a broad, abstract extension of the well-studied on-line prediction model to a general decision-theoretic setting. We show that the multiplicative weight-update Littlestone–Warmuth rule can be adapted to this model, yielding bounds that are slightly weaker in some cases, but applicable to a considerably more general class of learning problems. We show how the resulting learning algorithm can be applied to a variety of problems, including gambling, multiple-outcome prediction, repeated games, and prediction of points in Rn. In the second part of the paper we apply the multiplicative weight-update technique to derive a new boosting algorithm. This boosting algorithm does not require any prior knowledge about the performance of the weak learning algorithm. We also study generalizations of the new boosting algorithm to the problem of learning functions whose range, rather than being binary, is an arbitrary finite set or a bounded segment of the real line.}
+      \field{issn}{0022-0000}
+      \field{journaltitle}{Journal of Computer and System Sciences}
+      \field{number}{1, part 2}
+      \field{title}{{A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting}}
+      \field{volume}{55}
+      \field{year}{1997}
+      \field{pages}{119\bibrangedash 139}
+      \range{pages}{21}
+      \verb{doi}
+      \verb https://doi.org/10.1006/jcss.1997.1504
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/Daniel/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Freund, Schapire - 1997 - A Decision-Theoretic Generalization of On-Line Learning and an Application to Boosting(2).pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S002200009791504X
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S002200009791504X
+      \endverb
+    \endentry
+    \entry{Lipton2014}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=f211c9dcb451c49bff6408485f3a0096}{%
+           family={Lipton},
+           familyi={L\bibinitperiod},
+           given={Zachary\bibnamedelima C.},
+           giveni={Z\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4a515be7c49aeeb68dfe1388be237a23}{%
+           family={Elkan},
+           familyi={E\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5a9b2ccfdd5eb16540fef90fc11fe798}{%
+           family={Naryanaswamy},
+           familyi={N\bibinitperiod},
+           given={Balakrishnan},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6f460cfbaddcd9ed16708f0b43148aa}
+      \strng{fullhash}{6dc48540e1890d67ecd2dc8bf8b10fd3}
+      \strng{bibnamehash}{6dc48540e1890d67ecd2dc8bf8b10fd3}
+      \strng{authorbibnamehash}{6dc48540e1890d67ecd2dc8bf8b10fd3}
+      \strng{authornamehash}{d6f460cfbaddcd9ed16708f0b43148aa}
+      \strng{authorfullhash}{6dc48540e1890d67ecd2dc8bf8b10fd3}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper provides new insight into maximizing F1 scores in the context of binary classification and also in the context of multilabel classification. The harmonic mean of precision and recall, F1 score is widely used to measure the success of a binary classifier when one class is rare. Micro average, macro average, and per instance average F1 scores are used in multilabel classification. For any classifier that produces a real-valued output, we derive the relationship between the best achievable F1 score and the decision-making threshold that achieves this optimum. As a special case, if the classifier outputs are well-calibrated conditional probabilities, then the optimal threshold is half the optimal F1 score. As another special case, if the classifier is completely uninformative, then the optimal behavior is to classify all examples as positive. Since the actual prevalence of positive examples typically is low, this behavior can be considered undesirable. As a case study, we discuss the results, which can be surprising, of applying this procedure when predicting 26,853 labels for Medline documents.}
+      \field{eprinttype}{arXiv}
+      \field{isbn}{9783662448502}
+      \field{issn}{16113349}
+      \field{journaltitle}{Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}
+      \field{number}{PART 2}
+      \field{title}{{Optimal thresholding of classifiers to maximize F1 measure}}
+      \field{volume}{8725 LNAI}
+      \field{year}{2014}
+      \field{pages}{225\bibrangedash 239}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/978-3-662-44851-9_15
+      \endverb
+      \verb{eprint}
+      \verb 1402.1892
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/Daniel/Downloads/1402.1892.pdf:pdf
+      \endverb
+      \keyw{F score,F1 measure,binary classification,evaluation methodology,multilabel learning,supervised learning,text classification}
+    \endentry
+    \entry{NormalHedge}{incollection}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=c0fca6c342b798ab3b2482eb75663d0a}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Haipeng},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=1,uniquepart=given,hash=89c762f6f1cbb415e5ef62949aedecd0}{%
+           family={Schapire},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelimb E\bibnamedelima RE},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=1}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=b8fd0c0f416ef8a8bbb50286418e9df8}{%
+           family={Ghahramani},
+           familyi={G\bibinitperiod},
+           given={Z},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=064d84a432787740019dc765d9115718}{%
+           family={Welling},
+           familyi={W\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c294bbcb0687bdb5113cc4c4cd6ebad3}{%
+           family={Cortes},
+           familyi={C\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9ab079a7715bfa4227f140d780bb72b7}{%
+           family={Lawrence},
+           familyi={L\bibinitperiod},
+           given={N\bibnamedelima D},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=7a6a6c0be00ec21ecb08879998daf8b8}{%
+           family={Weinberger},
+           familyi={W\bibinitperiod},
+           given={K\bibnamedelima Q},
+           giveni={K\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{1eb2f27e3df1c2255e31ffd98bb4f175}
+      \strng{fullhash}{1eb2f27e3df1c2255e31ffd98bb4f175}
+      \strng{bibnamehash}{1eb2f27e3df1c2255e31ffd98bb4f175}
+      \strng{authorbibnamehash}{1eb2f27e3df1c2255e31ffd98bb4f175}
+      \strng{authornamehash}{1eb2f27e3df1c2255e31ffd98bb4f175}
+      \strng{authorfullhash}{1eb2f27e3df1c2255e31ffd98bb4f175}
+      \strng{editorbibnamehash}{c7ba7617e93a69d59a573eaaedbef28e}
+      \strng{editornamehash}{65b7e9a4aa080eb7f3776176b707f81c}
+      \strng{editorfullhash}{c7ba7617e93a69d59a573eaaedbef28e}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We provide a general mechanism to design online learning algorithms based on a minimax analysis within a drifting-games framework. Different online learning settings (Hedge, multi-armed bandit problems and online convex optimization) are studied by converting into various kinds of drifting games. The original minimax analysis for drifting games is then used and generalized by applying a series of relaxations, starting from choosing a convex surrogate of the 0-1 loss function. With different choices of surrogates, we not only recover existing algorithms, but also propose new algorithms that are totally parameter-free and enjoy other useful properties. Moreover, our drifting-games framework naturally allows us to study high probability bounds without resorting to any concentration results, and also a generalized notion of regret that measures how good the algorithm is compared to all but the top small fraction of candidates. Finally, we translate our new Hedge algorithm into a new adaptive boosting algorithm that is computationally faster as shown in experiments, since it ignores a large number of examples on each round.}
+      \field{booktitle}{Advances in Neural Information Processing Systems 27}
+      \field{title}{{A Drifting-Games Analysis for Online Learning and Applications to Boosting}}
+      \field{year}{2014}
+      \field{pages}{1368\bibrangedash 1376}
+      \range{pages}{9}
+      \verb{file}
+      \verb :C$\backslash$:/Users/Daniel/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Luo, Schapire - 2014 - A drifting-games analysis for online learning and applications to boosting.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://papers.nips.cc/paper/5549-a-drifting-games-analysis-for-online-learning-and-applications-to-boosting
+      \endverb
+      \verb{url}
+      \verb http://papers.nips.cc/paper/5549-a-drifting-games-analysis-for-online-learning-and-applications-to-boosting
+      \endverb
+    \endentry
+    \entry{Otten2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=c481f627eed1eae6b1219284e6e2c3f5}{%
+           family={Otten},
+           familyi={O\bibinitperiod},
+           given={Heleen},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Leiden University}%
+      }
+      \strng{namehash}{c481f627eed1eae6b1219284e6e2c3f5}
+      \strng{fullhash}{c481f627eed1eae6b1219284e6e2c3f5}
+      \strng{bibnamehash}{c481f627eed1eae6b1219284e6e2c3f5}
+      \strng{authorbibnamehash}{c481f627eed1eae6b1219284e6e2c3f5}
+      \strng{authornamehash}{c481f627eed1eae6b1219284e6e2c3f5}
+      \strng{authorfullhash}{c481f627eed1eae6b1219284e6e2c3f5}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{A theoretical examination of boosting algorithms}}
+      \field{type}{Bachelor Thesis}
+      \field{year}{2016}
+      \verb{file}
+      \verb :C$\backslash$:/Users/Daniel/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Otten - 2016 - A theoretical examination of boosting algorithms(2).pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.universiteitleiden.nl/binaries/content/assets/science/mi/scripties/otten.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.universiteitleiden.nl/binaries/content/assets/science/mi/scripties/otten.pdf
+      \endverb
+    \endentry
+    \entry{Pedregosa2012}{article}{}
+      \name{author}{16}{}{%
+        {{uniquename=0,uniquepart=base,hash=bab4e5caee2d67831e464ce575022b37}{%
+           family={Pedregosa},
+           familyi={P\bibinitperiod},
+           given={Fabian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0dca8e8d308f467938614f484c0b23af}{%
+           family={Varoquaux},
+           familyi={V\bibinitperiod},
+           given={Ga{ë}l},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=12ebe424e1c87de156c57e8fa7683f46}{%
+           family={Gramfort},
+           familyi={G\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=504ea1986689f1047a6f0beda2cb3822}{%
+           family={Michel},
+           familyi={M\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0f3fc06fb9fcbb01b9cc0985eaf0a71c}{%
+           family={Thirion},
+           familyi={T\bibinitperiod},
+           given={Bertrand},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=721be0317527f44db425f7a97dcab15e}{%
+           family={Grisel},
+           familyi={G\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d3b6c8582cea4e8b6576137b6a72cadc}{%
+           family={Blondel},
+           familyi={B\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=86e647e5c801f3ce733927f75f029463}{%
+           family={Prettenhofer},
+           familyi={P\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=89d698773eaf2fae761ff0008031c7be}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={Ron},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b255e99d411f28c789a231829f765c64}{%
+           family={Dubourg},
+           familyi={D\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a08a00cf90823600b731a138afc28949}{%
+           family={Vanderplas},
+           familyi={V\bibinitperiod},
+           given={Jake},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=afb9a37bec11b531f1f0f33793a7f1fe}{%
+           family={Passos},
+           familyi={P\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9fd9ed8466bbb96364ae008f2a665e6e}{%
+           family={Cournapeau},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=281ac3097ec8447c2d26e9f3cfde6082}{%
+           family={Brucher},
+           familyi={B\bibinitperiod},
+           given={Matthieu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=23403cde972dddbdb48efe2bcc07dc3c}{%
+           family={Perrot},
+           familyi={P\bibinitperiod},
+           given={Matthieu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f937c35f16cf2a0eb7870a6512c3c794}{%
+           family={Duchesnay},
+           familyi={D\bibinitperiod},
+           given={{É}douard},
+           giveni={É\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9ec95d747bac3417f92265a9a44f8bb4}
+      \strng{fullhash}{df155dac8d8dc0cb9b160f5885e12eb8}
+      \strng{bibnamehash}{9d492dfab30d17a95396ecf8139e8eea}
+      \strng{authorbibnamehash}{9d492dfab30d17a95396ecf8139e8eea}
+      \strng{authornamehash}{9ec95d747bac3417f92265a9a44f8bb4}
+      \strng{authorfullhash}{df155dac8d8dc0cb9b160f5885e12eb8}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Scikit-learn is a Python module integrating a wide range of state-of-the-art machine learning algorithms for medium-scale supervised and unsupervised problems. This package focuses on bringing machine learning to non-specialists using a general-purpose high-level language. Emphasis is put on ease of use, performance, documentation, and API consistency. It has minimal dependencies and is distributed under the simplified BSD license, encouraging its use in both academic and commercial settings. Source code, binaries, and documentation can be downloaded from http://scikit-learn.sourceforge.net.}
+      \field{isbn}{1532-4435}
+      \field{issn}{15324435}
+      \field{journaltitle}{{\ldots} of Machine Learning {\ldots}}
+      \field{title}{{Scikit-learn: Machine Learning in Python}}
+      \field{volume}{12}
+      \field{year}{2012}
+      \field{pages}{2825\bibrangedash 2830}
+      \range{pages}{6}
+      \verb{file}
+      \verb :C$\backslash$:/Users/Daniel/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Pedregosa et al. - 2012 - Scikit-learn Machine Learning in Python.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://dl.acm.org/citation.cfm?id=2078195{\%}5Cnhttp://arxiv.org/abs/1201.0490
+      \endverb
+      \verb{url}
+      \verb http://dl.acm.org/citation.cfm?id=2078195%7B%5C%%7D5Cnhttp://arxiv.org/abs/1201.0490
+      \endverb
+    \endentry
+    \entry{Vente2016}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b723134bb7b2e7f781e1219598c0152a}{%
+           family={Vente},
+           familyi={V\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Univeristy of Leiden}%
+      }
+      \strng{namehash}{b723134bb7b2e7f781e1219598c0152a}
+      \strng{fullhash}{b723134bb7b2e7f781e1219598c0152a}
+      \strng{bibnamehash}{b723134bb7b2e7f781e1219598c0152a}
+      \strng{authorbibnamehash}{b723134bb7b2e7f781e1219598c0152a}
+      \strng{authornamehash}{b723134bb7b2e7f781e1219598c0152a}
+      \strng{authorfullhash}{b723134bb7b2e7f781e1219598c0152a}
+      \field{sortinit}{V}
+      \field{sortinithash}{75dd7385c90b2252c3ae853a80ca853b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{To appear at $\backslash$url{\{}https://www.math.leidenuniv.nl/nl/theses/year/2016/{\}}}
+      \field{title}{{A practical comparison of boosting algorithms}}
+      \field{type}{Bachelor Thesis}
+      \field{year}{2016}
+      \verb{file}
+      \verb :C$\backslash$:/Users/Daniel/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Vente - 2016 - A practical comparison of boosting algorithms.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.universiteitleiden.nl/binaries/content/assets/science/mi/scripties/vente.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.universiteitleiden.nl/binaries/content/assets/science/mi/scripties/vente.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

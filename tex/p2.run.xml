@@ -64,7 +64,7 @@
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
+  <external package="biblatex" priority="5" active="0">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
@@ -83,7 +83,7 @@
       <file>p2.bcf</file>
     </requires>
     <requires type="editable">
-      <file>~/Tex/library.bib</file>
+      <file>C:/Users/Daniel/Documents/BibTex/library.bib</file>
     </requires>
   </external>
 </requests>

@@ -5,7 +5,7 @@
 
 \usepackage[sorting=nyt,style=apa]{biblatex}
 
-\addbibresource{~/Tex/library.bib}
+\addbibresource{C:/Users/Daniel/Documents/BibTex/library.bib}
 
 \usepackage[margin=1in]{geometry}
 
@@ -28,69 +28,134 @@
 \author{170008773}
 \date{\today}
 \begin{document}
-\maketitle
-
-\section{Introduction}
-\label{intro}
-For this assignemdnt a classification system to classify certain colours from their optical reflectance spectroscopy readings was to be implemented. 
-\section{The learning pipeline}
-\label{content}
-
-\paragraph{Data description}There were 180 samples in the binary set and 450 samples in the multiclass set. Both sets also had 921 features. All of the features consist of some intensity reading from the light reflecting of the surface at certain wavelengths.   
-
-\subsection{Data preperation}
-\paragraph{data seperation} Since the data dit not in seperate training and testing sets, it had to be seperated frist, into a testing and a training set. Even though the data contains a lot of features, the number of samples was relatively low. This meant that not a lot of data could be set aside for testing, but it still had to be large enough that the results would be representable. Eventually 25\% of the data was set aside for testing. This was ligtly below a common rule of thumb of setting aside 30\% of the data for testing. 
-
-\paragraph{Normalisation} After the data was seperated, it was deemed favorable to normalise the data so that the scale wouldn't introduce additional biases duringg the rest of the process. A standard normalisation was applied to both the training and test data, according to the values of the training data. 
-
-\subsection{Initial exploration}
-
-
-\paragraph{Getting a baseline}A data set of these proportions is extremely hard to visualise effectively. Therefore a simple \code{LogisticRegression} classifier was used on the data to get a baseline accruacy. This was done to get a general sence of how complex the data was. If the accuracy of such a simple classifier with no aditional work was very high that would suggest that the data was not very complex and that some of the data could probably be pruned. If this was the case then models who could provide more information than just accurate classifications would have to be considered. On the other hand if this baseline was very low then this would have suggested that the data would have been very complex and more sopisticated methods with a bigger emphesis on accracy would have to have been considered. The logistic regression classifier achieved a $F_1$ score of 1.0 on both the binary and multiclass data, meaning that it achieved perfect accuracy (for a deeper discussion of why $F_1$ was chosen see section \ref{metrics}).
-
-
-\paragraph{Moving beyond the baseline} The fact that the baseline accruaccy was so high suggested that the data was not very complex and that significant parts could be pruned without a significant loss in accruacy. This is favourable because it allows future data to be stored more compactly and decreases operation time for new data. Therefore, models that provide some mechanic to rank the featues in terms of importance would be considered, instead of models that would merely provide the best performance. 
-
-
-\subsection{Model evaluation setup}
-\paragraph{Model selectin process} Because it was the goals to provide a mechanic whereby new data could be classifed, a model had to be selected. It was decided to use $k$-fold crosss validation to select the model. After a model was selected, it would be trained on all the train data and evaluated on the trest data. If this provided as satisfactory accuracy then the model would be trained on all available data and then used to predict the previously unseen data. 
-
-\subsubsection{Cross validation} As previously mentioned it was decided to select a model based on its performance on $k$-fold cross validation. Special care had to be taken to select an appropriate $k$ for this process. If the $k$ had been to large than there would not have been enough folds to make the results representative, but if the $k$ was too small than each of the metrics of each individual fold would not be representative. Eventually $k$ was chosen to be 3 in the binary case and 5 in the multiclass case. This would mean that each fold would contain 60 samples in the binary case and 90 in the multiclass case which was deemed to be a good ditribution. It is important to note that the multiclass folds should be larger than the binary ones since that data is potentially more complex. 
-
-\subsubsection{Metrics}
-\label{metrics} 
-
-\paragraph{Accuracy}From the baseline measurements it was clear that more metrics than simple accuracy would have to be taken into consideration. For our accruacy we used the widely used $F_1$ score with micro averaging in the multiclass case. which is defined as $$F_1 = \frac{2}{\frac{1}{recall} + \frac{1}{precision}} = \frac{2\cdot TP}{2\cdot TP + FP + FN}$$ Where $TP, FP, FN$ represent the number of true positives, false positives and false negatives respectively \autocite{Lipton2014}. This was initialy used because it was the default way to measure accuracy in sci-kit learn. After it was used in the baseline measruement it became clear that the accuracy was perfect already and thus that it wouldn't have made sense to use other metrics. The micro averaging is the most acurate metric that is mentioned by \citeauthor{Lipton2014} and was therefore deemed to be the most favorable to use. 
-
-\paragraph{Beyond accuracy} As mentioned before the accuracy of the baseline suggested that more metrics than simple accuracy would have to be considered.
-
- This was revealed by our baseline. We therefore decided that we also would consider the total operation time (that includes both training and testing) . Here we elected to measure the sum instead of the average because of {\color{red} insert reason}. Eventually we also used a rating for model selection which we calculated as $\frac{\mu_s}{T}$ where $\mu_s$ is the mean of the score across the cross-validation folds and $T$ is the total amount of seconds the algorithm took across all the cross-validation folds. This measure might not be very good to use in general circumstances but here is is still useful because all of our models had similar accuraccy. We used it because this would allow us to select a method that might do slightly worse than the other models but do it orders of magnitude factor, which turned out to be the case. 
-
-\subsubsection{Models}
-To select our model we started out with several algorithms: logisitc regression, gradient boosting, random forests, decision tree and AdaBoost. All of these have ways of descriminating amoungst featueres. All of the models above, except for logistic regression provide a native way to rank features {\color{red} insert reference}. In the case of logistic regression we used Recrusive Feature Elimination (RFE){\color{red} insert reference}. 
-
-
-\subsection{Evaluating the model}
-\label{evaluation}
-\begin{tabular}{lllllllll}
-	\toprule
-	{} &            Algorithm &  Mean score &  Time on full set & Important features &  Mean score on reduced set &  Time on reduced set &      Rating \\
-	\midrule
-	3 &        Decision tree &         1.0 &                                  0.060660 &                            1 &                                1.0 &                                     0.006051 &  165.266717 \\
-	4 &             Adaboost &         1.0 &                                  0.065143 &                            1 &                                1.0 &                                     0.011564 &   86.473363 \\
-	0 &  Logistic regression &         1.0 &                                  0.063668 &                          460 &                                1.0 &                                     0.026572 &   37.633952 \\
-	2 &       Random Forests &         1.0 &                                  0.091240 &                           10 &                                1.0 &                                     0.076235 &   13.117325 \\
-	1 &    Gradient Boosting &         1.0 &                                  1.370301 &                           69 &                                1.0 &                                     0.210093 &    4.759796 \\
-	\bottomrule
-\end{tabular}
-
-\subsection{Discussing the results}
-\label{discussion}
-
-
-\section{Conclusions}
- 
- 
-word count: 
-\printbibliography
+	\maketitle
+	
+	\section{Introduction}
+	\label{intro}
+	For this assignment, a system to classify certain colours from their optical reflectance spectroscopy readings for both binary and multiclass labelled data was to be implemented. Several methods of classification will be discussed, including Logistic Regression, AdaBoost, Random Forests, Gradient Boosting and Decision Trees with the decision tree performing the best. The models were measured on their performance using $k$-fold cross-validation to select a model. After the model selection, the chosen model was re-trained and re-evaluated on the test data and scored using the $F_1$ metric. Finally, the model was being trained on the whole data set to provide a mechanic for classifying previously unseen data.  In the end, the Decision tree performed best, finally achieving an $F_1$ score of 1.0 on both data sets. 
+	
+	
+	\section{Data preperation}
+	\paragraph{Data description} The data consisted of a binary set and a multiclass set. There were 180 samples in the binary set and 450 samples in the multiclass set. Both sets also had 921 features. All of the features consist of some intensity reading from the light reflecting off the surface at certain wavelengths.   
+	
+	\paragraph{Data seperation} Since the data dit not arrive in separate training and testing sets, it had to be seperated first into a testing and a training set. Even though the data contains a lot of features, the number of samples was relatively low. This meant that not a lot of data could be set aside for testing, but it still had to be large enough that the results would be representable. Eventually 25\% of the data was set aside for testing. This was sligtly below a common rule of thumb of setting aside 30\% of the data for testing. 
+	
+	\paragraph{Normalisation} After the data was separated, it was deemed favourable to normalise the data so that the scale wouldn't introduce additional biases during the rest of the process. A standard normalisation was applied to both the training and test data, according to the values of the training data. 
+	
+	\section{Initial exploration}
+	
+	
+	\paragraph{Getting a baseline}A data set of these proportions is extremely hard to visualise effectively. Therefore a simple \code{LogisticRegression} classifier was used on the data to get a baseline accuracy. This was done to get a general sense of how complex the data was. If the accuracy of such a simple classifier with no additional work was very high that would suggest that the data was not very complex and that some of the data could probably be pruned. If this was the case then models who could provide more information than just accurate classifications would have to be considered. On the other hand, if this baseline was very low then this would have suggested that the data would have been very complex and more sophisticated methods with a bigger emphasis on accuracy would have to have been considered. The logistic regression classifier achieved an $F_1$ score of 1.0 on both the binary and multiclass data, meaning that it achieved perfect accuracy (for a deeper discussion of why $F_1$ was chosen to see section \ref{metrics}).
+	
+	
+	\paragraph{Moving beyond the baseline} The fact that the baseline accuracy was so high suggested that the data was not very complex and that significant parts could be pruned without a significant loss in accuracy. This is favourable because it allows future data to be stored more compactly and decreases operation time for classifying new data. Therefore, models that provide some mechanic to rank the features in terms of importance were considered, instead of models that would merely provide the best performance. 
+	
+	
+	\section{Model evaluation setup}
+	\paragraph{Model selectin process} Because it was a goal to provide a mechanic whereby new data could be classified, a model had to be selected. It was decided to use $k$-fold cross-validation to select the model. After a model was selected, it would be trained on all the train data and evaluated on the test data. If this provided satisfactory accuracy then the model would be trained on all available data and then used to predict the previously unseen data. 
+	
+	\subsection{Cross validation} As previously mentioned it was decided to select a model based on its performance on $k$-fold cross-validation. Special care had to be taken to select an appropriate $k$ for this process. If the $k$ had been to small than there would not have been enough folds to make the results representative, but if the $k$ was too large than each of the metrics of each individual fold would not be representative. Eventually $k$ was chosen to be 3 in the binary case and 5 in the multiclass case. This would mean that each fold would contain 60 samples in the binary case and 90 in the multiclass case which was deemed to be a good distribution. It is important to note that the multiclass folds should be larger than the binary ones since that data is potentially more complex. 
+	
+	\subsection{Metrics}
+	\label{metrics} 
+	
+	\paragraph{Accuracy}From the baseline measurements, it was clear that more metrics than simple accuracy would have to be taken into consideration. For our accuracy, the ubiquitous $F_1$ score, which is the so-called `Harmonic mean', of the precision and the recall, was used with micro averaging in the multiclass case. This, in theory, means that the $F_1$ score measures both recall and precision at the same time, valuing both equally. $F_1$ is defined as $$F_1 = \frac{2}{\frac{1}{recall} + \frac{1}{precision}} = \frac{2\cdot TP}{2\cdot TP + FP + FN}$$ Where $TP, FP, FN$ represent the number of true positives, false positives and false negatives respectively \autocite{Lipton2014}. Firstly, $F_1$ was chosen because of its ubiquity. Reasons to choose other metrics could have been that either recall or precision could have been deemed more important, but this was not believed to be the case given the context. Secondly, $F_1$ was initially used in the baseline measurement because it was the default way to measure accuracy in sci-kit learn \autocite{Pedregosa2012}. After it was used in the baseline measurement it became clear that the accuracy was perfect already and thus that it wouldn't have made sense to use other metrics that favour or punish mistakes differently. The micro averaging is the most accurate metric that is mentioned by \citeauthor{Lipton2014} and was therefore deemed to be the most favourable to use. 
+	
+	\paragraph{Beyond accuracy} As mentioned before the accuracy of the baseline suggested that more metrics than simple accuracy would have to be considered. Beyond accuracy the number of features the algorithm could reduce the full data set too and the total operation time were deemed to be the relevant metrics. It was deemed desirable to have a single numerical metric to base the model selection on since that would make the decision process easier to automate, and more generally applicable. For this reason a metric defined as $\frac{\mu_s}{T}$ was used. Here $\mu_s$ represents the mean score on the training sets across all cross-validation folds and $T$ represents the total time of operation on the feature set, i.e. the time spent both training and testing across all folds. A higher rating in this metric is considered to be better. This metric was considered because would allow, for example, for models to be selected that might have slightly less than perfect accuracy but performed orders or magnitude faster than the rest, which was deemed to be desirable. This metric also takes the number of features into account implicitly, since if the model can perform its classification with less features, it will generally do so in less time. It should also be noted that this metric does say much about the performance of the models in isolation and is only intended for comparing between models.
+	
+	The astute reader might remark that this metric has some sensitivity issues. For example, a classifier that performs poorly but does it in fractions of microseconds would do quite well even though this is not the desired behaviour. This was not deemed to be a problem in this context, however, because the baseline measurement already suggested that the accuracy of all the models would be similar, i.e. near perfect. Therefore these sensitivity issues would not distort the results. It was also verified manually that this metric performed as expected. 
+	
+	\subsection{Models} As mentioned before, models that provide some mechanic of ranking features in terms of importance were to be considered. It was decided to try a variety of different methods namely: logistic regression, gradient boosting, random forests, decision tree and AdaBoost. All of these models, except logistic regression, provide native mechanics of ranking features according to their impact. For logistic regression Recursive Feature Elimination (RFE) was used. 
+	
+	
+	\section{Evaluating the model}
+	\label{evaluation}
+	The results of the $k$-fold cross validation runs for the binary and the multiclass data can be found in Figure \ref{binaryTable} and \ref{multiclassTable} respectively. 
+	\begin{figure}
+		\begin{tabular}{|l|rrrrr|}
+			\toprule
+			Algorithm &  Mean score &  Total operation time & Important features & Feature set &      Rating \\
+			\midrule
+			Decision tree &         1.0 &              0.003655 &                            1 &     reduced &  273.618892 \\
+			Adaboost &         1.0 &              0.008293 &                            1 &     reduced &  120.581417 \\
+			Logistic regression &         1.0 &              0.019660 &                          460 &     reduced &   50.864093 \\
+			Decision tree &         1.0 &              0.026309 &                            1 &        Full &   38.010476 \\
+			Adaboost &         1.0 &              0.031199 &                            1 &        Full &   32.051842 \\
+			Random Forests &         1.0 &              0.049511 &                           10 &     reduced &   20.197355 \\
+			Logistic regression &         1.0 &              0.050313 &                          460 &        Full &   19.875675 \\
+			Random Forests &         1.0 &              0.055884 &                           10 &        Full &   17.894246 \\
+			Gradient Boosting &         1.0 &              0.131196 &                           70 &     reduced &    7.622168 \\
+			Gradient Boosting &         1.0 &              0.841714 &                           70 &        Full &    1.188051 \\
+			\bottomrule
+		\end{tabular}
+		
+		\caption{A table containing the metrics of the models using $k$-fold cross validation on the binary data set, in order of decreasing rating}
+		\label{binaryTable}
+	\end{figure}
+	\begin{figure}
+		\begin{tabular}{|l|rrrrr|}
+			\toprule
+			Algorithm &  Mean score &  Total operation time & Important features & Feature set &      Rating \\
+			\midrule
+			Decision tree &    0.997015 &              0.005924 &                            4 &     reduced &  168.301352 \\
+			Random Forests &    1.000000 &              0.087713 &                           41 &     reduced &   11.400849 \\
+			Random Forests &    1.000000 &              0.148290 &                           41 &        Full &    6.743536 \\
+			Decision tree &    0.991000 &              0.291626 &                            4 &        Full &    3.398190 \\
+			Linear &    1.000000 &              0.357316 &                          460 &     reduced &    2.798647 \\
+			Adaboost &    0.807071 &              0.674922 &                           43 &     reduced &    1.195799 \\
+			Linear &    1.000000 &              0.852753 &                          460 &        Full &    1.172672 \\
+			Gradient Boosting &    0.994198 &              2.261343 &                           88 &     reduced &    0.439649 \\
+			Adaboost &    0.903337 &              6.247627 &                           43 &        Full &    0.144589 \\
+			Gradient Boosting &    0.988137 &             13.692962 &                           88 &        Full &    0.072164 \\
+			\bottomrule
+		\end{tabular}
+		
+		\caption{A table containing the metrics of the models using $k$-fold cross validation on the multiclass data set, in order of decreasing rating}
+		\label{multiclassTable}
+	\end{figure}
+	
+	\section{Discussing the results}
+	\label{discussion}
+	\subsubsection{Model performance}
+	\subsubsection{Binary}  In the binary case all the models achieved perfect accuracy on both the full and the reduced feature set. Here the Decision tree still won by quite a significant margin over it's closest competitor AdaBoost. Both the models were able to reduce the feature set down to 1, but the decision tree was faster. After being retrained on all the training data the decision tree achieved an $F_1$ score of 1.0 on the test data (i.e. perfect accuracy). This would imply that this classification method would certainly be useful in any application where data like this is to be used, assuming that the provided data was representative. Accuracies like these are, by and large, considered to be unreasonable to attain, and this might raise some concern over whether the data used was representative, but that discussion is outside the scope of this assignment.  
+	
+	\subsubsection{Multiclass} The decision tree also performs best on the multiclass set. Even though it does not achieve perfect accuracy on the multiclass set, it does this in an order of magnitude less time than its closest competitor (the random forest on the reduced set) and reduces the feature set to 4 instead of the 42 the random forest achieved, meaning that manual analysis can be performed on that feature set much easier. This was exactly the reason that the rating metric described in section \ref{metrics} was chosen.
+	
+	\paragraph{Speed vs accruacy}  In mission-critical applications, such as medical or military operations, perfect accuracy might be deemed more important than speed, in which case the random forest would have been preferable, but this was not the case for this research. It is of course also true that speed performances beyond a certain point do not matter. When the classification time no longer is the bottleneck in the system operation, improving the speed further does not help. This, however, is too context specific to be discussed here. This also makes the automatic rating a lot more complicated so this would have to be done manually or would require more research into more sophisticated ranking metrics.  
+	
+	\paragraph{Stability of the accuracy} It should also be noted that the models used are largely stochastic, this means that the accuracy they achieve might not be completely equal across runs. This is especially true in the multiclass case. This is not a cause for concern however as they should be largely stable, which was manually verified to be true. This is also partially true due to the fact that the data set contained relatively few samples. 
+	
+	\paragraph{AdaBoost performance}It is interesting to note that the performance rating of the random forests and AdaBoost essentially reversed between the two sets. Consider that while decision tree is very effective here, it generally isn't considered to be extremely robust. Other ensemble methods like AdaBoost are more catered towards noisier data. AdaBoost is a somewhat old algorithm \autocite{Freund1997} and there have been newer iterations of this algorithm \autocite{NormalHedge, Otten2016, Vente2016} and it would be possible that these newer versions could perform better, while also being more robust.  
+	
+	\paragraph{Final performance of the decision tree}After being retrained on all the trainings data the decision tree achieved an $F_1$ score on the test data (i.e. perfect accuracy). This would imply that this classification method would certainly be useful in any application where data like this is to be used, assuming that the provided data was representative. Accuracies like these are by and large, considered to be unreasonable to attain, and this might raise some concern over whether the data used was representative, but that discussion is outside the scope of this assignment.
+	
+	\subsection{Feature importance and analysis}
+	
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=0.5\textwidth]{binaryScatterplot}
+		\caption{A scatter plot of the catagory vs the best feature of the binary data set}
+		\label{binaryScatterplot}
+	\end{figure}
+	
+	\paragraph{Binary} Looking at figure \ref{binaryScatterplot} confirms that indeed the data is not extremely complex. When looking at this feature it is easy to see that the data is linearly separable. This explains how even the logistic regression could achieve perfect accuracy. It should be noted however that it was because of the mechanics of the decision tree that this feature was found. Another interesting note is that the feature used is not stable over runs, meaning that there are multiple features that exhibit this separability characteristic.    
+	
+	
+	
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=\textwidth]{multiclassScatterplot}
+		\caption{A scatter plot matrix of the the best features of the multiclass data set}
+		\label{multiclassScatterplot}
+	\end{figure}
+	
+	
+	\paragraph{Multiclass} Looking at the scatterplot matrix of the 4 features extracted by the decision tree, it becomes clear that the multiclass set is somewhat more complex but still relatively simple. Most of the scatter plots exhibit a high degree of separability. Again it should be noted however that the features used are not completely stable over runs. This means that there are multiple feature sets that exhibit the separability shown in the figure. Due to the stochastic nature of the models used and the relatively low amount of available data, the decision tree can sometimes select different features resulting in a slightly worse accuracy. Whether this constitutes cause for concern is left for the reader to decide. If this is the case, the random forest would be preferable, as that model is more reliable, though slightly slower. Again, this might not make a difference if the model operation is no longer the bottleneck in the system.     
+	
+	\subsection{Limitations}
+	The conclusions of this study are very limited in scope. Only standard out-of-the-box models were considered, although given the performance achieved this is not a cause for concern. So too, the amount of data available was less than ideal and the data itself was extremely specific and clean, making the results in this study less widely applicable. Furthermore, the possibly uncanny performance could raise concerns over whether the data used was actually representative. One could reasonably postulate that this study has not explored measures of robustness very well and thus if future data proved to be more noisy that could cause trouble.
+	
+	
+	word count:  2299
+	\printbibliography
 \end{document}
