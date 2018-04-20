@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  19 APR 2018 16:44
+This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  19 APR 2018 18:06
  restricted system commands enabled.
 **p2.tex
 (./p2.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.965 seconds
+luaotfload | main : initialization completed in 1.511 seconds
 Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -814,24 +814,28 @@ tex-cache/generic/fonts/otl/lmroman12-regular.luc)(load luc: C:/Users/Daniel/App
 Data/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman12-bold.luc)(load lu
 c: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmrom
 an10-bold.luc)(load luc: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/g
-eneric/fonts/otl/lmmono10-regular.luc)
-
-LaTeX Warning: Reference `metrics' on page 1 undefined on input line 49.
-
-[1
+eneric/fonts/otl/lmmono10-regular.luc) [1
 
 {C:/Users/Daniel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (166.44513pt too wide) in paragraph at lines 70--81
+
+LaTeX Warning: Citation 'Lipton2014' on page 2 undefined on input line 61.
+
+[2]
+Overfull \hbox (166.44513pt too wide) in paragraph at lines 72--83
 [] 
  []
 
-[2]
 
-LaTeX Warning: Empty bibliography on input line 90.
+LaTeX Warning: Empty bibliography on input line 92.
 
 [3] (./p2.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                p2
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'p2.run.xml'.
 
@@ -839,15 +843,15 @@ Package logreq Info: Writing requests to 'p2.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 12211 strings out of 494456
+ 12394 strings out of 494456
  125171,794899 words of node,token memory allocated
- 501 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 5 glue, 1 kern, 6 attribute, 56 glue_spec, 6 attrib
+ 505 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 5 glue, 1 kern, 7 attribute, 56 glue_spec, 7 attrib
 ute_list, 1 write nodes
-   avail lists: 2:340,3:54,4:21,5:165,6:14,7:3275,8:11,9:109,10:10,11:178
- 15901 multiletter control sequences out of 65536+200000
+   avail lists: 2:289,3:78,4:21,5:266,6:12,7:4010,8:41,9:94,10:9,11:241
+ 16084 multiletter control sequences out of 65536+200000
  46 fonts using 3130391 bytes
- 43i,6n,45p,1018b,2205s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,6n,45p,1049b,2205s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmmo
 no10-regular.otf><c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/openty
 pe/public/lm/lmroman10-bold.otf><c:/users/daniel/appdata/local/programs/miktex 2
@@ -859,10 +863,13 @@ mroman17-regular.otf><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Daniel/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Daniel/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on p2.pdf (3 pages, 69398 bytes).
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/
+Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb
+><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb>
+Output written on p2.pdf (3 pages, 88298 bytes).
 
-PDF statistics: 70 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

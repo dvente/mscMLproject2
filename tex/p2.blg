@@ -1,9 +1,9 @@
 [0] Config.pm:302> INFO - This is Biber 2.10
-[0] Config.pm:305> INFO - Logfile is 'p2.blg'
-[45] biber-MSWIN64:313> INFO - === 
-[87] Biber.pm:371> INFO - Reading 'p2.bcf'
-[273] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[290] Utils.pm:193> WARN - The file 'p2.bcf' does not contain any citations!
-[308] bbl.pm:617> INFO - Writing 'p2.bbl' with encoding 'UTF-8'
-[308] bbl.pm:720> INFO - Output to p2.bbl
-[318] Biber.pm:110> INFO - WARNINGS: 1
+[1] Config.pm:305> INFO - Logfile is 'p2.blg'
+[48] biber-MSWIN64:313> INFO - === 
+[104] Biber.pm:371> INFO - Reading 'p2.bcf'
+[285] Biber.pm:857> INFO - Found 1 citekeys in bib section 0
+[310] Biber.pm:3976> INFO - Processing section 0
+[328] Biber.pm:4136> INFO - Looking for bibtex format file '~/Tex/library.bib' for section 0
+[568] Utils.pm:209> ERROR - Cannot find '~/Tex/library.bib'!
+[569] Biber.pm:114> INFO - ERRORS: 1
