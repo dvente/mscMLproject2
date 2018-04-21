@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  20 APR 2018 17:42
+This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  21 APR 2018 19:19
  restricted system commands enabled.
 **p2.tex
 (./p2.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.979 seconds
+luaotfload | main : initialization completed in 1.199 seconds
 Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -842,14 +842,15 @@ Package luatex.def Info: multiclassScatterplot.png  used on input line 147. on i
 nput line 147.
 Package luatex.def Info: Requested size: 469.75502pt x 443.62253pt on input line
  147.
-(load luc: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/o
-tl/lmroman10-italic.luc) [6<./binaryScatterplot.png>]
-Overfull \hbox (25.25815pt too wide) in paragraph at lines 161--161
+ [6<./binaryScatterplot.png>](load luc: C:/Users/Daniel/AppData/Local/MiKTeX/2.9
+/luatex-cache/generic/fonts/otl/lmroman10-italic.luc) [7<./multiclassScatterplot
+.png>]
+Overfull \hbox (25.25815pt too wide) in paragraph at lines 162--162
 [][]\TU/lmr/m/n/10 Ot-ten, H. (2016). A the-or-et-ical ex-am-in-a-tion of boost
 -ing al-gorithms. Re-trieved from $https : / / www . universiteitleiden .
  []
 
-[7<./multiclassScatterplot.png>] (./p2.aux)
+[8] (./p2.aux)
 
 Package biblatex Warning: Please rerun LaTeX.
 (biblatex)                Page breaks have changed.
@@ -865,11 +866,11 @@ Here is how much of LuaTeX's memory you used:
  505 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 5 glue, 1 kern, 7 attribute, 56 glue_spec, 7 attrib
 ute_list, 1 write nodes
-   avail lists: 1:1,2:721,3:188,4:28,5:283,6:14,7:6364,8:110,9:238,10:14,11:373,
+   avail lists: 1:1,2:721,3:163,4:29,5:276,6:14,7:6241,8:109,9:237,10:15,11:366,
 12:1
  16161 multiletter control sequences out of 65536+200000
  47 fonts using 3262071 bytes
- 43i,9n,61p,1496b,2205s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,9n,61p,1477b,2205s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmro
 man10-italic.otf><c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/openty
 pe/public/lm/lmmono10-regular.otf><c:/users/daniel/appdata/local/programs/miktex
@@ -886,9 +887,9 @@ sers/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 10.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmr7.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb>
-Output written on p2.pdf (7 pages, 182881 bytes).
+Output written on p2.pdf (8 pages, 183214 bytes).
 
-PDF statistics: 101 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
