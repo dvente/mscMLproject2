@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  21 APR 2018 19:19
+This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  21 APR 2018 19:36
  restricted system commands enabled.
 **p2.tex
 (./p2.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 1.199 seconds
+luaotfload | main : initialization completed in 1.010 seconds
 Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -851,10 +851,6 @@ Overfull \hbox (25.25815pt too wide) in paragraph at lines 162--162
  []
 
 [8] (./p2.aux)
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'p2.run.xml'.
 
 \openout1 = p2.run.xml
@@ -887,7 +883,7 @@ sers/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 10.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmr7.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb>
-Output written on p2.pdf (8 pages, 183214 bytes).
+Output written on p2.pdf (8 pages, 181207 bytes).
 
 PDF statistics: 104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
