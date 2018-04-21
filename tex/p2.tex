@@ -8,7 +8,7 @@
 \addbibresource{C:/Users/Daniel/Documents/BibTex/library.bib}
 
 \usepackage[margin=1in]{geometry}
-
+\usepackage{appendix}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{listings}
@@ -159,4 +159,14 @@
 	word count:  2299
 	\FloatBarrier
 	\printbibliography
+
+	\begin{appendices}
+	\section{Binary classification result}
+	\label{binary}
+	\lstinputlisting{../binaryTask/PredictedClasses.csv}
+	
+	\section{Multiclass classification result}
+	\label{multiclass}
+	\lstinputlisting{../multiClassTask/PredictedClasses.csv}
+\end{appendices}
 \end{document}

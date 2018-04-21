@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  21 APR 2018 19:36
+This is LuaTeX, Version 1.06.2 (MiKTeX 2.9.6500 64-bit)  (format=lualatex 2018.1.16)  21 APR 2018 19:41
  restricted system commands enabled.
 **p2.tex
 (./p2.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 1.010 seconds
+luaotfload | main : initialization completed in 1.083 seconds
 Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/base/article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -525,6 +525,13 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geometry
 .cfg"))
+("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/appendix/appendix
+.sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count295
+\c@@ppsavesec=\count296
+\c@@ppsaveapp=\count297
+)
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsmath.s
 ty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
@@ -551,13 +558,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 y"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count295
+\inf@bad=\count298
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count296
-\leftroot@=\count297
+\uproot@=\count299
+\leftroot@=\count300
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count298
-\DOTSCASE@=\count299
+\classnum@=\count301
+\DOTSCASE@=\count302
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -566,15 +573,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen114
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count300
-\c@MaxMatrixCols=\count301
+\macc@depth=\count303
+\c@MaxMatrixCols=\count304
 \dotsspace@=\muskip11
-\c@parentequation=\count302
-\dspbrk@lvl=\count303
+\c@parentequation=\count305
+\dspbrk@lvl=\count306
 \tag@help=\toks19
-\row@=\count304
-\column@=\count305
-\maxfields@=\count306
+\row@=\count307
+\column@=\count308
+\maxfields@=\count309
 \andhelp@=\toks20
 \eqnshift@=\dimen115
 \alignsep@=\dimen116
@@ -616,24 +623,24 @@ File: luatex.def 2017/06/24 v1.0f Graphics/color driver for luatex
 )
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings
 .sty"
-\lst@mode=\count307
+\lst@mode=\count310
 \lst@gtempboxa=\box28
 \lst@token=\toks23
-\lst@length=\count308
+\lst@length=\count311
 \lst@currlwidth=\dimen123
-\lst@column=\count309
-\lst@pos=\count310
+\lst@column=\count312
+\lst@pos=\count313
 \lst@lostspace=\dimen124
 \lst@width=\dimen125
-\lst@newlines=\count311
-\lst@lineno=\count312
+\lst@newlines=\count314
+\lst@lineno=\count315
 \lst@maxwidth=\dimen126
 
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/lstmisc.
 sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count313
-\lst@skipnumbers=\count314
+\c@lstnumber=\count316
+\lst@skipnumbers=\count317
 \lst@framebox=\box29
 )
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/listings/listings
@@ -647,10 +654,10 @@ ty"
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks24
 )
-\c@defin=\count315
-\c@prop=\count316
-\c@col=\count317
-\c@thm=\count318
+\c@defin=\count318
+\c@prop=\count319
+\c@col=\count320
+\c@thm=\count321
 
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/placeins/placeins
 .sty"
@@ -679,12 +686,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen134
 \cmidrulekern=\dimen135
 \defaultaddspace=\dimen136
-\@cmidla=\count319
-\@cmidlb=\count320
+\@cmidla=\count322
+\@cmidlb=\count323
 \@aboverulesep=\dimen137
 \@belowrulesep=\dimen138
-\@thisruleclass=\count321
-\@lastruleclass=\count322
+\@thisruleclass=\count324
+\@lastruleclass=\count325
 \@thisrulewidth=\dimen139
 )
 Package csquotes Info: Checking for multilingual support...
@@ -776,16 +783,16 @@ Package biblatex Info: Reference segment=0 on input line 30.
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf.m
 kii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count323
+\scratchcounter=\count326
 \scratchdimen=\dimen140
 \scratchbox=\box30
-\nofMPsegments=\count324
-\nofMParguments=\count325
+\nofMPsegments=\count327
+\nofMParguments=\count328
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count326
+\MPscratchCnt=\count329
 \MPscratchDim=\dimen141
-\MPnumerator=\count327
-\makeMPintoPDFobject=\count328
+\MPnumerator=\count330
+\makeMPintoPDFobject=\count331
 \everyMPtoPDFconversion=\toks26
 )
 ("C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstopdf
@@ -807,7 +814,7 @@ Package grfext Info: Graphics extension search list:
 ,.JBIG2,.JB2 ,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count329
+\c@lstlisting=\count332
 (load luc: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/o
 tl/lmroman17-regular.luc)(load luc: C:/Users/Daniel/AppData/Local/MiKTeX/2.9/lua
 tex-cache/generic/fonts/otl/lmroman12-regular.luc)(load luc: C:/Users/Daniel/App
@@ -850,21 +857,22 @@ Overfull \hbox (25.25815pt too wide) in paragraph at lines 162--162
 -ing al-gorithms. Re-trieved from $https : / / www . universiteitleiden .
  []
 
-[8] (./p2.aux)
+(../binaryTask/PredictedClasses.csv) (../multiClassTask/PredictedClasses.csv
+[8]) [9] (./p2.aux)
 Package logreq Info: Writing requests to 'p2.run.xml'.
 
 \openout1 = p2.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 12484 strings out of 494456
+ 12741 strings out of 494456
  125171,794899 words of node,token memory allocated
  505 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 5 glue, 1 kern, 7 attribute, 56 glue_spec, 7 attrib
 ute_list, 1 write nodes
-   avail lists: 1:1,2:721,3:163,4:29,5:276,6:14,7:6241,8:109,9:237,10:15,11:366,
+   avail lists: 1:1,2:721,3:163,4:29,5:356,6:42,7:6241,8:190,9:540,10:15,11:366,
 12:1
- 16161 multiletter control sequences out of 65536+200000
+ 16387 multiletter control sequences out of 65536+200000
  47 fonts using 3262071 bytes
  43i,9n,61p,1477b,2205s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/users/daniel/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmro
@@ -883,9 +891,9 @@ sers/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 10.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmr7.pfb><C:/Users/Daniel/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb>
-Output written on p2.pdf (8 pages, 181207 bytes).
+Output written on p2.pdf (9 pages, 182479 bytes).
 
-PDF statistics: 104 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 107 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
