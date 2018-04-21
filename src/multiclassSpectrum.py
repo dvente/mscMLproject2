@@ -135,7 +135,7 @@ pd.DataFrame(bestModel.predict(bestSelector.transform(X_toClassify))).to_csv("..
 bestFeatures = bestSelector.get_support()
 df = pd.concat([
         pd.DataFrame(X[:,bestFeatures],columns=["{:.3f}".format(numb) + " nm" for wl in waveLengths[bestFeatures].values.tolist() for numb in wl ]),
-        pd.DataFrame(y,columns=["Catagory"])]
+        pd.DataFrame(y,columns=["Category"])]
     ,axis=1)
 df.head()
 
@@ -143,12 +143,12 @@ df.head()
 # In[9]:
 
 
-sns.pairplot(df,hue='Catagory')
+sns.pairplot(df,hue='Category')
 plt.savefig('../tex/multiclassScatterplot.png')
 plt.show()
 
 
-# In[10]:
+# In[ ]:
 
 
 print(results.to_latex())

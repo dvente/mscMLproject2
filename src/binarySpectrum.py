@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[10]:
+# In[1]:
 
 
 import pandas as pd
@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-# In[11]:
+# In[2]:
 
 
 # Setup models to use and needed parameters for model selection
@@ -35,7 +35,7 @@ models = [('Logistic regression',linear,RFE(linear)),
           ('Adaboost',ABC,SelectFromModel(ABC))]
 
 
-# In[12]:
+# In[3]:
 
 
 # load the data
@@ -55,7 +55,7 @@ X_test = scaler.transform(X_test)
 X_toClassify = scaler.transform(X_toClassify)
 
 
-# In[13]:
+# In[4]:
 
 
 # Get a baseline accruaccy
@@ -65,7 +65,7 @@ linear.fit(X_train,y_train)
 f1_score(linear.predict(X_train),y_train)
 
 
-# In[14]:
+# In[5]:
 
 
 # Setup a dataframe to contain the results
@@ -106,7 +106,7 @@ bestModelRecord = results.iloc[0]
 results
 
 
-# In[15]:
+# In[6]:
 
 
 # Find the best model
@@ -120,7 +120,7 @@ bestModel.fit(bestSelector.fit_transform(X_train,y_train),y_train)
 f1_score(bestModel.predict(bestSelector.transform(X_test)),y_test)
 
 
-# In[16]:
+# In[7]:
 
 
 # Use trained model to predict and store the results of the samples to classify
@@ -128,7 +128,7 @@ f1_score(bestModel.predict(bestSelector.transform(X_test)),y_test)
 pd.DataFrame(bestModel.predict(bestSelector.transform(X_toClassify))).to_csv("../binary/PredictedClasses.csv",index=False)
 
 
-# In[17]:
+# In[8]:
 
 
 # Put the best features and the labels in one dataframe so we can easily plot them
@@ -140,18 +140,18 @@ df = pd.concat([
 df.head()
 
 
-# In[18]:
+# In[9]:
 
 
 plt.scatter(x=df.iloc[:,0],y=df.iloc[:,1])
-plt.title("Catagorical scatterplot of the binary data")
-plt.ylabel("Catagory")
+plt.title("Categorical scatterplot of the binary data")
+plt.ylabel("Category")
 plt.xlabel(df.columns[0])
 plt.savefig('../tex/binaryScatterplot.png')
 plt.show()
 
 
-# In[10]:
+# In[ ]:
 
 
 print(results.to_latex())
